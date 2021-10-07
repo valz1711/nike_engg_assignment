@@ -8,8 +8,8 @@ Steps to deploy the job:
 
 **Local mode - executed and working**
 
-spark-submit --class com.cts.nike.file.proc.utils.UniqueJSONWrite --master local --name CSV_TO_UNIQUE_JSONS /mnt/c/IDW/SparkJobs/nike_de-0.0.1-SNAPSHOT.jar /mnt/c/IDW/Inputs/Nike/dataengineertest/dataengineertest/ /mnt/c/IDW/Outputs/JSONExplodeSHELL
+spark-submit --class com.cts.nike.file.proc.utils.UniqueJSONWrite --master local --name CSV_TO_UNIQUE_JSONS /mnt/c/IDW/SparkJobs/nike_de-0.0.1-SNAPSHOT.jar /mnt/c/IDW/Inputs/Nike/dataengineertest/dataengineertest/ /mnt/c/IDW/Outputs/JSONExplode Y2018 W2
 
 **yarn-cluster mode - alter paths to jar/input/output files**
 
-spark-submit --driver-memory 2G --executor-memory 2G --driver-cores 2 --executor-cores 2 --num-executors 2 --master yarn-cluster --name CSV_TO_UNIQUE_JSONS --jars /path/to/supporting_jar1.jar,/path/to/supporting_jar2.jar /path/to/nike_de-0.0.1-SNAPSHOT.jar /path/to/input/files/ /path/to/output/directory 
+spark-submit --driver-memory 2G --executor-memory 2G --driver-cores 2 --executor-cores 2 --num-executors 2 --master yarn-cluster --name CSV_TO_UNIQUE_JSONS --jars /path/to/supporting_jar1.jar,/path/to/supporting_jar2.jar /path/to/nike_de-0.0.1-SNAPSHOT.jar /path/to/input/files/ /path/to/output/directory Y2018 W2 
